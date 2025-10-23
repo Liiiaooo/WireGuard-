@@ -1,5 +1,5 @@
 
-# WireGuard 网页配置管理器
+# WireGuard 网页配置管理器 由Gemini生成
 ### (An All-in-One Offline WireGuard Tool)
 
 这是一个**一体化**的 WireGuard 助手。它是一个**完全离线**的 HTML 文件，集成了**安装指南**和**全功能配置管理器**。
