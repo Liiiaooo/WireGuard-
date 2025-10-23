@@ -103,7 +103,7 @@
         }
 
         /* --- 
-           v11 工具的样式 (复制粘贴)
+            工具的样式 (复制粘贴)
            这些样式将应用于弹窗内的工具
         --- */
         .tool-container {
@@ -328,7 +328,7 @@
             <span id="generator-tool-modal-close-btn">&times;</span>
             
             <div class="tool-container">
-                <h1>WireGuard 配置管理器 (v11)</h1>
+                <h1>WireGuard 配置管理器 ()</h1>
                 <div class="warning">
                     <strong>安全提示：</strong> 所有配置均在您的浏览器本地生成和保存。
                 </div>
@@ -516,9 +516,9 @@ sudo ufw allow ssh</pre>
         });
 
         // ---
-        // --- v11 工具的完整 JavaScript (已修改弹窗ID) ---
+        // ---  工具的完整 JavaScript (已修改弹窗ID) ---
         // ---
-        const STORAGE_KEY = 'wireguardConfigV11'; // v10 -> v11 key
+        const STORAGE_KEY = 'wireguardConfig'; // v10 ->  key
         let configState = {
             server: {},
             clients: []
@@ -672,7 +672,7 @@ sudo ufw allow ssh</pre>
             fileInput.value = ""; 
         }
 
-        // --- 4. 解析与渲染 (Render) - v11 ---
+        // --- 4. 解析与渲染 (Render) -  ---
         function parseAndLoadConfig(text) {
             const lines = text.split('\n');
             let newServerConfig = {};
@@ -744,7 +744,7 @@ sudo ufw allow ssh</pre>
             }
             document.getElementById('output-wrapper').classList.remove('modal-hidden');
             
-            // 渲染 wg0.conf (v11)
+            // 渲染 wg0.conf ()
             let wg0Conf = `
 # --- 服务器配置 (wg0.conf) ---
 [Interface]
